@@ -71,3 +71,11 @@ c. Validación de datos
 ![alt text](image-11.png)
 - Google Cloud (Colocando una IP inválida)
 ![alt text](image-12.png)
+
+7. Evidencia uso de branchs
+
+- Merge rama feature a main
+![alt text](image-13.png)
+![alt text](image-14.png)
+![alt text](image-15.png)
+
