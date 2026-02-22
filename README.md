@@ -3,6 +3,7 @@ API de geolocalización y seguridad de direcciones IP (UIDE - Tratamiento de Dat
 Este proyecto consiste en el diseño, construcción y despliegue de una API funcional utilizando FastAPI, contenedores Docker y despliegue automático en Google Cloud Run.
 
 1. Objetivo del Proyecto
+
 Desarrollar un microservicio capaz de procesar datos de red (IPs) y devolver información geográfica y de seguridad, aplicando buenas prácticas de desarrollo, versionamiento con Git y despliegue en la nube.
 
 2. Tecnologías Utilizadas
@@ -15,6 +16,7 @@ Desarrollar un microservicio capaz de procesar datos de red (IPs) y devolver inf
 - Pruebas: curl
 
 3. Gestión de Ramas (Git)
+
 Se aplicó el uso de ramas para el desarrollo de funcionalidades específicas:
 main: Código estable para producción.
 feature/security-analysis: Rama creada para implementar la lógica de la api con el scoring y validación de IPs.
@@ -22,9 +24,13 @@ feature/security-analysis: Rama creada para implementar la lógica de la api con
 Comandos utilizados:
 
 - Bash:
+
 git checkout -b feature/security-analysis
+
 git commit -m "first commit"
+
 git checkout main
+
 git merge feature/security-analysis
 
 4. Ejecución Local:
@@ -44,7 +50,9 @@ Docker
 
 5. Despliegue en Google Cloud
 
-Despligue Google Cloud Run con sincronización automática al repositorio de github ![alt text](image-2.png)
+Despligue Google Cloud Run con sincronización automática al repositorio de github 
+![alt text](image-2.png)
+![alt text](image-16.png)
 
 Endpoint Público: https://tratamientodatos-ej1-605537504220.us-central1.run.app/
 
