@@ -10,14 +10,14 @@ class Item(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"status": "online", "message": "API funcionando en Google Cloud"}
+    return {"status": "online", "message": "API Geolocalización y Seguridad Direcciones IP"}
 
 @app.post("/analyze")
 def analyze_ip(item: Item):
-    # Simulación de procesamiento/scoring (Puntos extra)
+    # Consulta direcciones IP a API externa
     response = requests.get(f"http://ip-api.com/json/{item.ip}")
     data = response.json()
-    
+    # Validación dirección IP
     if data['status'] == 'fail':
         raise HTTPException(status_code=400, detail="IP no válida")
     
